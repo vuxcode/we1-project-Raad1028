@@ -4,5 +4,7 @@
 
 For example: 
 
-- 2022-10-25 13:00 Worked for 1 hour.
-  - *List the things you have done.*
+- 2024-04-05 16:00 Worked for 1 hour.
+  - Started working on the main design
+  - Created style.css to have a consistent design throughout the website.
+  - Started early work on the sidebar design.

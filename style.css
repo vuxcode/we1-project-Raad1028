@@ -34,10 +34,19 @@ div {
     display: block;
     
 }
-.logo {
+.sidebarbox {
     border: solid 1px black;
     margin: 5px auto;
     display: block;
-    width: 90px
+    width: 90px;
+    height: 90px;
 }
-
+.sidebarbtn {
+    height: 100px;
+    width: 100px;
+    border: solid black;
+    border-width: 0 0 1px 0;    
+}
+.sidebartext {
+    margin: 0 auto;
+}

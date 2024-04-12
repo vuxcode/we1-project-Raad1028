@@ -42,8 +42,21 @@ div {
     border-width: 0 0 1px 0;    
 }
 .sidebartext {
-    margin: 0 auto;
+    margin-top: 60%;
+    text-align: center;
 }
 .logo {
     width: 88px
+}
+.extendbtn {
+    display: block;
+    border: solid black;
+    border-width: 1px 0 0 0;
+    height: 180px;
+    width: 100px;
+    position: absolute;
+    top: 95%;
+    bottom: 100%;
+    padding: 5px;
+    text-align: center;
 }

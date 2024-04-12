@@ -22,12 +22,6 @@ div {
     position: fixed;
 }
 
-.logobox {
-    height: 100px;
-    width: 100px;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-}
 .logo .extended{
     border: solid 1px black;
     margin: 15px auto;
@@ -36,17 +30,20 @@ div {
 }
 .sidebarbox {
     border: solid 1px black;
-    margin: 5px auto;
+    margin: 4px auto;
     display: block;
     width: 90px;
     height: 90px;
 }
 .sidebarbtn {
-    height: 100px;
+    height: 99px;
     width: 100px;
     border: solid black;
     border-width: 0 0 1px 0;    
 }
 .sidebartext {
     margin: 0 auto;
+}
+.logo {
+    width: 88px
 }

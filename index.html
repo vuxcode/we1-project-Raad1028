@@ -31,6 +31,7 @@
         var sidebarbox1 = document.getElementsByClassName("sidebarbox")[1];
         var sidebarbtn0 = document.getElementsByClassName("sidebarbtn")[0];
         var sidebarbtn1 = document.getElementsByClassName("sidebarbtn")[1];
+        var extendText = document.getElementsByClassName("extend")[0];
 
 
         extendbtn.addEventListener("click", extend);
@@ -45,6 +46,7 @@
                 sidebarbtn1.classList.add("extended")
                 extendbtn.classList.add("extended")
                 sidebarExtended = true
+                extendText.innerHTML = "Minimize"
             }
             else if (sidebarExtended == true) {
                 sidebar.classList.remove("extended")
@@ -55,6 +57,7 @@
                 sidebarbtn1.classList.remove("extended")
                 extendbtn.classList.remove("extended")
                 sidebarExtended = false
+                extendText.innerHTML = "Extend"
             }
         }
     </script>

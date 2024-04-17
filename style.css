@@ -7,7 +7,7 @@
 div {
     display: inline-block;
 }
-.sidebar .extended {
+.sidebar.extended {
     height: 100%;
     border-style: solid;
     border-width: 0 1px 0 0;
@@ -22,11 +22,11 @@ div {
     position: fixed;
 }
 
-.logo .extended{
+.logo.extended{
     border: solid 1px black;
     margin: 15px auto;
     display: block;
-    
+    width: 150px;
 }
 .sidebarbox {
     border: solid 1px black;
@@ -35,9 +35,22 @@ div {
     width: 90px;
     height: 90px;
 }
+.sidebarbox.extended {
+    border: solid 1px black;
+    margin: 4px auto;
+    display: block;
+    width: 190px;
+    height: 190px;
+}
 .sidebarbtn {
     height: 99px;
     width: 100px;
+    border: solid black;
+    border-width: 0 0 1px 0;    
+}
+.sidebarbtn.extended {
+    height: 199px;
+    width: 200px;
     border: solid black;
     border-width: 0 0 1px 0;    
 }
@@ -54,6 +67,18 @@ div {
     border-width: 1px 0 0 0;
     height: 180px;
     width: 100px;
+    position: absolute;
+    top: 95%;
+    bottom: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.extendbtn.extended {
+    display: block;
+    border: solid black;
+    border-width: 1px 0 0 0;
+    height: 180px;
+    width: 200px;
     position: absolute;
     top: 95%;
     bottom: 100%;

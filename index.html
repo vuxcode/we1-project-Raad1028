@@ -15,13 +15,16 @@
             <a class="sidebarbox" href="#">
                 <h3 class="sidebartext">Genres</h3>
             </a>
-            
         </div>
+
         <div class="extendbtn">
             <a class="extend" href="#">Extend</a>
         </div>
         
     </div>
+    <main id="main">
+        <h1>Title</h1>
+    </main>
     <script>
         var sidebarExtended = false
         var extendbtn = document.getElementsByClassName("extendbtn")[0];
@@ -32,7 +35,7 @@
         var sidebarbtn0 = document.getElementsByClassName("sidebarbtn")[0];
         var sidebarbtn1 = document.getElementsByClassName("sidebarbtn")[1];
         var extendText = document.getElementsByClassName("extend")[0];
-
+        var main = document.getElementById("main");
 
         extendbtn.addEventListener("click", extend);
 
@@ -45,8 +48,10 @@
                 sidebarbtn0.classList.add("extended")
                 sidebarbtn1.classList.add("extended")
                 extendbtn.classList.add("extended")
+                main.classList.add("extended")
                 sidebarExtended = true
                 extendText.innerHTML = "Minimize"
+
             }
             else if (sidebarExtended == true) {
                 sidebar.classList.remove("extended")
@@ -56,6 +61,7 @@
                 sidebarbtn0.classList.remove("extended")
                 sidebarbtn1.classList.remove("extended")
                 extendbtn.classList.remove("extended")
+                main.classList.remove("extended")
                 sidebarExtended = false
                 extendText.innerHTML = "Extend"
             }

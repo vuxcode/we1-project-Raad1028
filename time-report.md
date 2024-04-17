@@ -1,8 +1,5 @@
 # Time Report
 
-> Write about what you have done and how long you have worked on each part of the project.
-
-For example: 
 
 - 2024-04-05 16:00 Worked for 1 hour.
   - Started working on the main design
@@ -17,3 +14,8 @@ For example:
   - Solved an issue where an automatic margin was added that couldnt be removed.
   - Tweaks to the sidebar design.
   - Started working on adding the extend-button in the sidebar.
+
+- 2024-04-17 14:30 Worked for 2 hours
+  - Made extend button functional using javascript.
+  - Added colors to elements.
+  - Started working on the main part of the screen.

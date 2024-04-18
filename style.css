@@ -26,6 +26,11 @@ iframe {
     
 }
 
+#sidebarframe {
+    width: 100px;
+    border: 0
+}
+
 .sidebar.extended {
     height: 100%;
     border-style: solid;

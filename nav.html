@@ -22,7 +22,48 @@
         </div>
         
     </div>
-    
+    <script>
+        var sidebarExtended = false
+        var extendbtn = document.getElementsByClassName("extendbtn")[0];
+        var sidebar = document.getElementsByClassName("sidebar")[0];
+        var logo = document.getElementsByClassName("logo")[0];
+        var sidebarbox0 = document.getElementsByClassName("sidebarbox")[0];
+        var sidebarbox1 = document.getElementsByClassName("sidebarbox")[1];
+        var sidebarbtn0 = document.getElementsByClassName("sidebarbtn")[0];
+        var sidebarbtn1 = document.getElementsByClassName("sidebarbtn")[1];
+        var extendText = document.getElementsByClassName("extend")[0];
+        var main = document.getElementById("main");
+
+        extendbtn.addEventListener("click", extend);
+
+        function extend() {
+            if (sidebarExtended == false) {
+                sidebar.classList.add("extended")
+                logo.classList.add("extended")
+                sidebarbox0.classList.add("extended")
+                sidebarbox1.classList.add("extended")
+                sidebarbtn0.classList.add("extended")
+                sidebarbtn1.classList.add("extended")
+                extendbtn.classList.add("extended")
+                main.classList.add("extended")
+                sidebarExtended = true
+                extendText.innerHTML = "Minimize"
+
+            }
+            else if (sidebarExtended == true) {
+                sidebar.classList.remove("extended")
+                logo.classList.remove("extended")
+                sidebarbox0.classList.remove("extended")
+                sidebarbox1.classList.remove("extended")
+                sidebarbtn0.classList.remove("extended")
+                sidebarbtn1.classList.remove("extended")
+                extendbtn.classList.remove("extended")
+                main.classList.remove("extended")
+                sidebarExtended = false
+                extendText.innerHTML = "Extend"
+            }
+        }
+    </script>
 </body>
 
 </html>

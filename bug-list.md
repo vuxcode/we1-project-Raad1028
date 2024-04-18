@@ -4,4 +4,5 @@
 
 1. [Solved 2024-04-12] Margin inbetween sidebar buttons: *When adding a new sidebar button, there is an automatic empty space of ~5 pixels between them. Through troubleshooting, it seems to be related to inline-blocks* 
 
-2. Margin inbetween sidebar buttons issue reintroduced when sidebar is extended: *When sidebar is extended there is an automatic empty space of ~5 pixels between the buttons. This issue was resolved earlier when the sidebar didnt have an extend button.*
+2. [Solved 2024-04-18] Margin inbetween sidebar buttons issue reintroduced when sidebar is extended: *When sidebar is extended there is an automatic empty space of ~5 pixels between the buttons. This issue was resolved earlier when the sidebar didnt have an extend button.*
+    * Solution: Made most elements into flex instead of inline blocks, so far I feel like the flex elements are easier to control.

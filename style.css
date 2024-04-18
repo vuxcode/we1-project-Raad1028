@@ -73,7 +73,8 @@ iframe {
     height: 99px;
     width: 100px;
     border: solid black;
-    border-width: 0 0 1px 0;    
+    border-width: 0 0 1px 0;
+    display: flex;    
 }
 .sidebarbtn.extended {
     height: 199px;
@@ -114,5 +115,6 @@ iframe {
     text-align: center;
 }
 .header {
-    
+    text-align: center;
+    margin-top: 3%;
 }

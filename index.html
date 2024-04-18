@@ -11,5 +11,21 @@
     </main>
     
 </body>
+<script>
+    var main = document.getElementById("main");
+    var sidebarframe = document.getElementById("sidebarframe")
+    
+    window.document.addEventListener("extendMain", extendSidebar)
+    window.document.addEventListener("minimizeMain", minimizeSidebar)
 
+    function extendSidebar() {
+        main.classList.add("extended")
+        sidebarframe.classList.add("extended")
+        
+    }
+    function minimizeSidebar() {
+        main.classList.remove("extended")
+        sidebarframe.classList.remove("extended")
+    }
+</script>
 </html>

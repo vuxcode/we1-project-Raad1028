@@ -24,3 +24,8 @@
   - Made the sidebar into an iframe in order to easier control it when I start adding more pages to the website. It also made it easier to control the main element because of no longer needing a margin the size of the sidebar.
   - I also had to make the javascript in the iframe able to interact with the javascript of the main website, which turned out to be a bit complicated, but with a bit of googling I managed to find a solution.
   - Changed most of the elements into flex elements as I found them much easier to work with and control.
+
+- 2024-04-23 20:00 Worked for 1.5 hours
+  - Fixed an issue where links inside an iframe opens the link inside the iframe rather than opening the link in the browser.
+  - Added boxes to the main part of the page.
+  - Tried to make parts of the website more compatible with smaller screens, solved some stuf but caused new issues.

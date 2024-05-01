@@ -32,11 +32,23 @@ header {
 
 #sidebarframe {
     width: 100px;
-    border: 0
+    border: 0;
+    position: fixed;
 }
 
 #sidebarframe.extended {
     width: 200px;
+}
+#sidebardiv {
+    width: 100px;
+    border: 0;
+    display: flex;
+    min-width: 100px;
+}
+#sidebardiv.extended {
+    width: 200px;
+    display: flex;
+    min-width: 200px;
 }
 
 .sidebar.extended {
@@ -121,19 +133,31 @@ header {
     padding: 5px;
     text-align: center;
 }
+.subheader {
+    text-align: center;
+    margin: 10px 25%;
+    background-color: #FDF0D5;
+    border-radius: 25px;
+    max-width: 500px;
+    min-width: 300px;
+    align-self: center;
+    padding: 0 10px;
+}
 .content {
     width: 100%;
     height: 100%;
-    align-content: center;
+    align-content: flex-start;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
 }
 .boxtype1 {
     background-color: #FDF0D5;
     height: 500px;
     width: 350px;
-    margin: 5px 2%;
+    margin: 5px 1%;
     border-radius: 25px;
     display: flex;
+    min-width: 300px;
 }

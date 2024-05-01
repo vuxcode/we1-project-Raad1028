@@ -10,4 +10,5 @@
 3. [Solved 2024-04-23] Clicking on a link inside an iframe opens the link inside the iframe instead of opening the link in the browser.
     * Solution: Added 'target="_parent"' to the anchor element.
 
-4. Weird positioning of boxes when screen is too small. *Seems to be related to justify-content: center.*
+4. [Solved 2024-05-01] Weird positioning of boxes when screen is too small. *Seems to be related to justify-content: center.*
+    * Solution: Turns out the issue was mostly because of the combination of"align-content: center;" and flex-wrap. Solved by changing align-content to flex-start.

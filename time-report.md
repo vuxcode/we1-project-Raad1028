@@ -29,3 +29,9 @@
   - Fixed an issue where links inside an iframe opens the link inside the iframe rather than opening the link in the browser.
   - Added boxes to the main part of the page.
   - Tried to make parts of the website more compatible with smaller screens, solved some stuf but caused new issues.
+
+- 2024-05-01 12:00 Worked for 2 hours
+  - Fixed issue where content would overflow outside of the screen if the screen was too small.
+  - Made sure that the sidebar stays in place when scrolling.
+  - Tweaked the css
+  - Added a new box.

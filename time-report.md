@@ -35,3 +35,7 @@
   - Made sure that the sidebar stays in place when scrolling.
   - Tweaked the css
   - Added a new box.
+
+- 2024-05-02 16:00 Worked for 2 hours
+  - Started working on the design of the boxes.
+  - Tried making the info text wrap around a button. The button is meant to be positioned on the bottom right, I spent atleast 45 minutes just trying to get that to work but didnt quite get it to work. So the current design is temporary, hopefully.

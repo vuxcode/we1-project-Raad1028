@@ -39,3 +39,8 @@
 - 2024-05-02 16:00 Worked for 2 hours
   - Started working on the design of the boxes.
   - Tried making the info text wrap around a button. The button is meant to be positioned on the bottom right, I spent atleast 45 minutes just trying to get that to work but didnt quite get it to work. So the current design is temporary, hopefully.
+
+- 2024-05-07 16:00 Worked for around 2-3 hours.
+  - Found a way to solve an issue with positioning and wordwrap. I spent a bit of time learning how the solution works.
+  - Tweaks to the CSS and HTML.
+  - Added placeholder content.

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strategy</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="sidebardiv">
+        <iframe id="sidebarframe" src="nav.html" height="100%"></iframe>
+    </nav>
+    <main id="main">
+        <header>
+            <h1>Strategy games</h1>
+            <h3>Subtitle - Lorem Ipsum</h3>
+        </header>
+        <div class="subheader">
+            <h1>Reviewed games</h1>
+            <h3>Choose a game to see my review!</h3>
+        </div>
+        <div class="content">
+            <div class="boxtype1">
+                <div class="imgbox">
+                    <img class="gameimg" src="CK3.jpg" alt="Crusader Kings 3">
+                </div>
+                <div class="infobox">
+                    <div class="infotext">
+                        <h1>Crusader Kings 3</h1>
+                        <a class="boxbutton" href="">Review >></a>
+                        <h4>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus diam in molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia in augue id congue. Pellentesque bibendum. </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="boxtype1">
+                <div class="imgbox">
+                    <img class="gameimg" src="Civ6.jpg" alt="Civilization 6">
+                </div>
+                <div class="infobox">
+                    <div class="infotext">
+                        <h1>Civilization 6</h1>
+                        <a class="boxbutton" href="">Review >></a>
+                        <h4>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra ex et interdum interdum. Duis risus lacus, sodales facilisis tempus nec, ultricies ut nulla. Morbi vestibulum leo mauris, rhoncus accumsan. </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    var sidebarframe = document.getElementById("sidebarframe")
+    var sidebardiv = document.getElementById("sidebardiv")
+    
+    window.document.addEventListener("extendMain", extendSidebar)
+    window.document.addEventListener("minimizeMain", minimizeSidebar)
+
+    function extendSidebar() {
+        sidebarframe.classList.add("extended")
+        sidebardiv.classList.add("extended")
+    }
+    function minimizeSidebar() {
+        sidebarframe.classList.remove("extended")
+        sidebardiv.classList.remove("extended")
+    }
+</script>
+</html>

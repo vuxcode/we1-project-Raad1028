@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="sidebardiv">
+        <iframe id="sidebarframe" src="nav.html" height="100%"></iframe>
+    </nav>
+    <main id="main">
+        <header>
+            <h1>Title</h1>
+            <h3>Subtitle - Lorem Ipsum</h3>
+        </header>
+        <div class="subheader">
+            <h1>Reviewed games</h1>
+            <h3>Choose a game to see my review!</h3>
+        </div>
+    </main>
+</body>
+<script>
+    var sidebarframe = document.getElementById("sidebarframe")
+    var sidebardiv = document.getElementById("sidebardiv")
+    
+    window.document.addEventListener("extendMain", extendSidebar)
+    window.document.addEventListener("minimizeMain", minimizeSidebar)
+
+    function extendSidebar() {
+        sidebarframe.classList.add("extended")
+        sidebardiv.classList.add("extended")
+    }
+    function minimizeSidebar() {
+        sidebarframe.classList.remove("extended")
+        sidebardiv.classList.remove("extended")
+    }
+</script>
+</html>

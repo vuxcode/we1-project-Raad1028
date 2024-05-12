@@ -11,12 +11,16 @@
                 <img class="logo" src="placeholderLogo.png" alt="placeholder logo">
             </a>
         </div>
-        <div class="sidebarbtn">
+        <div id="genrebtn" class="sidebarbtn">
             <a class="sidebarbox" href="#">
                 <h3 class="sidebartext">Genres</h3>
             </a>
         </div>
-
+        <div class="sidebarlist hidden">
+            <ul>
+                <li>Genres</li>
+            </ul>
+        </div>
         <div class="extendbtn">
             <a class="extend" href="#">Extend</a>
         </div>
@@ -30,9 +34,10 @@
         var sidebarbox0 = document.getElementsByClassName("sidebarbox")[0];
         var sidebarbox1 = document.getElementsByClassName("sidebarbox")[1];
         var sidebarbtn0 = document.getElementsByClassName("sidebarbtn")[0];
-        var sidebarbtn1 = document.getElementsByClassName("sidebarbtn")[1];
+        var genrebtn = document.getElementById("genrebtn");
         var extendText = document.getElementsByClassName("extend")[0];
-        
+        var sidebarlist = document.getElementsByClassName("sidebarlist")[0];
+
         var extendEvent = new CustomEvent("extendMain")
         var minimizeEvent = new CustomEvent("minimizeMain")
 
@@ -45,11 +50,12 @@
                 sidebarbox0.classList.add("extended")
                 sidebarbox1.classList.add("extended")
                 sidebarbtn0.classList.add("extended")
-                sidebarbtn1.classList.add("extended")
+                genrebtn.classList.add("hidden")
                 extendbtn.classList.add("extended")
                 sidebarExtended = true
                 extendText.innerHTML = "Minimize"
                 window.parent.document.dispatchEvent(extendEvent)
+                sidebarlist.classList.remove("hidden")
 
             }
             else if (sidebarExtended == true) {
@@ -58,11 +64,12 @@
                 sidebarbox0.classList.remove("extended")
                 sidebarbox1.classList.remove("extended")
                 sidebarbtn0.classList.remove("extended")
-                sidebarbtn1.classList.remove("extended")
+                genrebtn.classList.remove("hidden")
                 extendbtn.classList.remove("extended")
                 sidebarExtended = false
                 extendText.innerHTML = "Extend"
                 window.parent.document.dispatchEvent(minimizeEvent)
+                sidebarlist.classList.add("hidden")
             }
         }
     </script>

@@ -197,3 +197,12 @@ header {
 .gameimg {
     width: 100%;
 }
+.hidden {
+    display: none;
+}
+.sidebarlist {
+    display: inline-block
+}
+.sidebarlist.hidden {
+    display: none;
+}

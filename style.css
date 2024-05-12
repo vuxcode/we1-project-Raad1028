@@ -155,10 +155,10 @@ header {
 .boxtype1 {
     background-color: #FDF0D5;
     height: 500px;
-    width: 350px;
+    width: 356px;
     margin: 5px 1%;
     border-radius: 25px;
-    border: 3px solid;
+    border: 3px solid #FDF0D5;
     display: flex;
     min-width: 300px;
     flex-direction: column;

@@ -44,3 +44,9 @@
   - Found a way to solve an issue with positioning and wordwrap. I spent a bit of time learning how the solution works.
   - Tweaks to the CSS and HTML.
   - Added placeholder content.
+
+- 2024-05-12 16:00 Worked for around 3 hours
+  - Decided which genres and games to use
+  - Reduced the scope from 3 games per genre, to 2 games per genre.
+  - Added cover art for each of the game.
+  - Added text content to the frontpage.

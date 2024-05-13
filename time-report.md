@@ -50,3 +50,8 @@
   - Reduced the scope from 3 games per genre, to 2 games per genre.
   - Added cover art for each of the game.
   - Added text content to the frontpage.
+
+- 2024-05-13 17:00 Worked for 3 hours.
+  - Made the tree structure for the sidebar.
+  - Implemented a google font
+  - Tweaks to the design to be more compatible with the new font.

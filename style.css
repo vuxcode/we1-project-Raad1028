@@ -29,10 +29,11 @@ header {
     border-radius: 25px;
     min-width: 300px;
 }
-ul, li {
-    margin-left: 6px;
+li {
+    margin-left: 10px;
     color:#780000;
     font-size: large;
+    list-style: none;
 }
 
 #sidebarframe {
@@ -207,8 +208,15 @@ ul, li {
 }
 .sidebarlist {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 1px;
 }
 .sidebarlist.hidden {
     display: none;
+}
+#liststart {
+    margin-left: 3px;
+    margin-top: 5px;
+}
+.finallist {
+    margin-left: 16px;
 }

@@ -3,8 +3,11 @@
 <head>
     <title>Navigation menu</title>
     <link href="style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
 </head>
-<body>
+<body class="inter-font1">
     <div class="sidebar">
         <div class="sidebarbtn">
             <a class="sidebarbox" href="index.html" target="_parent">
@@ -89,7 +92,7 @@
                 extendText.innerHTML = "Minimize"
                 window.parent.document.dispatchEvent(extendEvent)
                 sidebarlist.classList.remove("hidden")
-
+                localStorage.setItem("")
             }
             else if (sidebarExtended == true) {
                 sidebar.classList.remove("extended")

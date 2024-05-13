@@ -34,8 +34,22 @@ li {
     color:#780000;
     font-size: large;
     list-style: none;
+    font-weight: 500;
 }
-
+h1 {
+    font-weight: 600;
+}
+h3 {
+    font-weight: 500;
+}
+h4 {
+    font-weight: 500;
+}
+a {
+    font-size: 17px;
+    font-weight: 550;
+    
+}
 #sidebarframe {
     width: 100px;
     border: 0;
@@ -147,7 +161,7 @@ li {
     max-width: 500px;
     min-width: 300px;
     align-self: center;
-    padding: 0 10px;
+    padding: 0 20px 5px;
 }
 .content {
     width: 100%;
@@ -188,16 +202,16 @@ li {
     width: 100%;
 }
 .boxbutton {
-    width: 90px;
+    width: 92px;
     height: 66px;
-    margin: 60px 3px 0 0;
+    margin: 60px 1px 0 0;
     border: 1px solid #003049;
     border-radius: 10px;
     float: right;
     background-color:#669BBC;
     color:#C1121F;
     align-content: center;
-    shape-outside: inset(calc(100% - 50px) 0 0);
+    shape-outside: inset(calc(100% - 55px) 0 0);
     text-align: center;
 }
 .gameimg {
@@ -220,3 +234,12 @@ li {
 .finallist {
     margin-left: 16px;
 }
+
+.inter-font1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+  }
+  

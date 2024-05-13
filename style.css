@@ -29,6 +29,11 @@ header {
     border-radius: 25px;
     min-width: 300px;
 }
+ul, li {
+    margin-left: 6px;
+    color:#780000;
+    font-size: large;
+}
 
 #sidebarframe {
     width: 100px;
@@ -201,7 +206,8 @@ header {
     display: none;
 }
 .sidebarlist {
-    display: inline-block
+    display: inline-block;
+    margin-left: 10px;
 }
 .sidebarlist.hidden {
     display: none;

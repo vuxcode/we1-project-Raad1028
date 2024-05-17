@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html>
 <head>
     <title>Navigation menu</title>
@@ -63,7 +63,7 @@
         
     </div>
     <script>
-        var sidebarExtended = false
+        var sidebarExtended = "off"
         var extendbtn = document.getElementsByClassName("extendbtn")[0];
         var sidebar = document.getElementsByClassName("sidebar")[0];
         var logo = document.getElementsByClassName("logo")[0];
@@ -77,37 +77,61 @@
         var extendEvent = new CustomEvent("extendMain")
         var minimizeEvent = new CustomEvent("minimizeMain")
 
-        extendbtn.addEventListener("click", extend);
+        extendbtn.addEventListener("click", switchState);
 
-        function extend() {
-            if (sidebarExtended == false) {
-                sidebar.classList.add("extended")
-                logo.classList.add("extended")
-                sidebarbox0.classList.add("extended")
-                sidebarbox1.classList.add("extended")
-                sidebarbtn0.classList.add("extended")
-                genrebtn.classList.add("hidden")
-                extendbtn.classList.add("extended")
-                sidebarExtended = true
-                extendText.innerHTML = "Minimize"
-                window.parent.document.dispatchEvent(extendEvent)
-                sidebarlist.classList.remove("hidden")
-                localStorage.setItem("")
+        function switchState() {
+            if (sidebarExtended == "off") {
+                extend()
             }
-            else if (sidebarExtended == true) {
-                sidebar.classList.remove("extended")
-                logo.classList.remove("extended")
-                sidebarbox0.classList.remove("extended")
-                sidebarbox1.classList.remove("extended")
-                sidebarbtn0.classList.remove("extended")
-                genrebtn.classList.remove("hidden")
-                extendbtn.classList.remove("extended")
-                sidebarExtended = false
-                extendText.innerHTML = "Extend"
-                window.parent.document.dispatchEvent(minimizeEvent)
-                sidebarlist.classList.add("hidden")
+            else if (sidebarExtended == "on") {
+                minimize()
             }
         }
+        function minimize() {
+            sidebar.classList.remove("extended")
+            logo.classList.remove("extended")
+            sidebarbox0.classList.remove("extended")
+            sidebarbox1.classList.remove("extended")
+            sidebarbtn0.classList.remove("extended")
+            genrebtn.classList.remove("hidden")
+            extendbtn.classList.remove("extended")
+            sidebarExtended = "off"
+            extendText.innerHTML = "Extend"
+            window.parent.document.dispatchEvent(minimizeEvent)
+            sidebarlist.classList.add("hidden")
+            localStorage.setItem("sidebarExtended", "off")
+        }
+        function extend() {
+            sidebar.classList.add("extended")
+            logo.classList.add("extended")
+            sidebarbox0.classList.add("extended")
+            sidebarbox1.classList.add("extended")
+            sidebarbtn0.classList.add("extended")
+            genrebtn.classList.add("hidden")
+            extendbtn.classList.add("extended")
+            sidebarExtended = "on"
+            extendText.innerHTML = "Minimize"
+            window.parent.document.dispatchEvent(extendEvent)
+            sidebarlist.classList.remove("hidden")
+            localStorage.setItem("sidebarExtended", "on")
+            
+        }
+
+        function getState() {
+            sidebarExtended = localStorage.getItem("sidebarExtended")
+            if (sidebarExtended == "on") {
+                extend();
+            }
+            else {
+                minimize();
+            }
+
+
+        }
+        
+        getState();
+            
+        
     </script>
 </body>
 

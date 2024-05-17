@@ -33,10 +33,10 @@ header {
 }
 li {
     margin-left: 10px;
-    color:#780000;
+    color: #C1121F;
     font-size: large;
     list-style: none;
-    font-weight: 500;
+    font-weight: 450;
 }
 h1 {
     font-weight: 600;
@@ -189,7 +189,7 @@ a {
 .boxtype2 {
     background-color: #FDF0D5;
     height: 35%;
-    width: 45%;
+    width: 48%;
     border-radius: 15px;
     border: 3px solid #FDF0D5;
     display: flex;
@@ -263,18 +263,39 @@ a {
     flex-wrap: wrap;
 }
 .infobar {
-    width: 300px;
+    width: 250px;
     height: 100%;
     float: right;
-    shape-outside: inset(calc(100% - 55px) 0 0);
     margin-left: auto;
     background-color: #003049;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .infobarheader {
     text-align: center;
-    margin: 10px auto;
-    color: #C1121F;
-    
+    margin: 15px auto;
+    color: #C1121F;    
+}
+.coverimg {
+    margin: 5px 10px;
+    padding: 5px 5px;
+    border: 0px;
+    background-color: #669BBC;
+}
+.generalinfo {
+    height: 100%;
+    border-top: #780000 solid 2px;
+    margin: 5px 7px;
+}
+.inforow {
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.line {
+    margin-top: 3px;
+    border-top: #780000 2px solid;
+}
+.infobarheader.sub {
+    margin-top: 25px;
+    margin-bottom: 0;
 }

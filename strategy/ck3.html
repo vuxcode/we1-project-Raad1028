@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crusader Kings 3</title>
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+<body class="inter-font1">
+    <nav id="sidebardiv">
+        <iframe id="sidebarframe" src="../nav.html" height="100%"></iframe>
+    </nav>
+    <main>
+        <div></div>
+            <header>
+                <h1>Title</h1>
+                <h3>Subtitle - Lorem Ipsum</h3>
+            </header>
+            
+        <div class="boxtype2">
+            <div class="maininfo">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu odio euismod, tincidunt urna ultrices, viverra mi. Sed at eros est. Morbi tempor lacus non libero ultricies, at efficitur dui aliquet. Quisque vel nunc non quam malesuada interdum. Suspendisse sit amet rhoncus erat, id iaculis nisi. Sed in sem eget est finibus mattis non in tellus. Vestibulum et lacinia odio, in varius enim. In sed laoreet felis, sed rhoncus elit. Nullam elementum dui laoreet elit blandit, ut vulputate elit iaculis. Ut pulvinar leo ac diam suscipit, eu auctor augue aliquet. Curabitur fringilla blandit ultricies. Nulla id quam aliquet velit ornare. </p>
+            </div>
+        </div>
+
+        
+    </main>
+    <div class="infobar">
+        <h3 class="infobarheader">Crusader Kings 3</h3>
+        
+    </div>
+</body>
+<script>
+    var sidebarframe = document.getElementById("sidebarframe")
+    var sidebardiv = document.getElementById("sidebardiv")
+    
+    window.document.addEventListener("extendMain", extendSidebar)
+    window.document.addEventListener("minimizeMain", minimizeSidebar)
+
+    function extendSidebar() {
+        sidebarframe.classList.add("extended")
+        sidebardiv.classList.add("extended")
+    }
+    function minimizeSidebar() {
+        sidebarframe.classList.remove("extended")
+        sidebardiv.classList.remove("extended")
+    }
+</script>
+</html>

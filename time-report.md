@@ -55,3 +55,8 @@
   - Made the tree structure for the sidebar.
   - Implemented a google font
   - Tweaks to the design to be more compatible with the new font.
+
+- 2024-05-17 Worked for around 4 hours.
+  - The state of the sidebar is now saved between pages.
+  - Started working on the design of the game pages.
+  - A lot of smaller changes to the design.

@@ -60,3 +60,9 @@
   - The state of the sidebar is now saved between pages.
   - Started working on the design of the game pages.
   - A lot of smaller changes to the design.
+
+- 2024-05-18 15:00 Worked for around 5 hours.
+  - Created a system to view images, and ways to controll which image is displayed.
+  - Added pages to each game.
+  - Added images and info to the pages of each game.
+  - A lot off tweaks to the design.

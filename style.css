@@ -276,7 +276,7 @@ button {
 }
 .infobarheader {
     text-align: center;
-    margin: 15px auto;
+    margin: 10px auto;
     color: #C1121F;    
 }
 .coverimg {
@@ -297,13 +297,15 @@ button {
 .inforow {
     margin-top: 6px;
     margin-left: 5px;
+    font-size: medium;
+    vertical-align: top;
 }
 .line {
     margin-top: 3px;
     border-top: #780000 2px solid;
 }
 .infobarheader.sub {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 .gamediv {
@@ -349,4 +351,14 @@ button {
 }
 .box1img {
     width: 100%;
+}
+.pegiimg {
+    width: 60px;
+    height: auto;
+}
+li a  {
+    color: #669BBC;
+}
+.extend {
+    color: #003049;
 }

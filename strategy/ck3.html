@@ -17,10 +17,17 @@
             </header>
         <div class="gamediv">
             <div class="gameimgbox">
+                <img class="gameimg z" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/ss_950a6f6dc67f521877345db6d2c0cebb27ddc528.jpg">
+                <img class="gameimg" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/ss_bdb27001b47f80b07024e392f57fdc1944e05a23.jpg">
+                <img class="gameimg" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/ss_8935f82df46266a193bd088085978629fb8cf7ec.jpg">
+                <img class="gameimg" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/ss_e23d2fb8a8f397025d063260bb458ad6adc6048b.jpg">
+                <img class="gameimg" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/ss_bd796a730113c2d44b0e025dd2c352cb179711ce.jpg">
+                <img class="gameimg" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/ss_21f4217602effcfbccc4afec373dd0428d2ecd47.jpg">
                 <div class="imgcontrols">
-                    <button class="">&lt;</button>
+                    <button class="leftbtn">&lt;</button>
+                    <h4 class="imgcounter"></h3>
+                    <button class="rightbtn">&gt;</button>
                 </div>
-                <img class="gameimg" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/ss_950a6f6dc67f521877345db6d2c0cebb27ddc528.jpg">
             </div>
             <div class="boxtype2">
                 <div class="maininfo">
@@ -55,9 +62,16 @@
 <script>
     var sidebarframe = document.getElementById("sidebarframe")
     var sidebardiv = document.getElementById("sidebardiv")
+    var leftbtn = document.getElementsByClassName("leftbtn")[0]
+    var rightbtn = document.getElementsByClassName("rightbtn")[0]
+    var counter = 1
+    var imgarray = document.getElementsByClassName("gameimg")
+    var counterelement = document.getElementsByClassName("imgcounter")[0]
     
     window.document.addEventListener("extendMain", extendSidebar)
     window.document.addEventListener("minimizeMain", minimizeSidebar)
+    rightbtn.addEventListener("click", nextimg)
+    leftbtn.addEventListener("click", previmg)
 
     function extendSidebar() {
         sidebarframe.classList.add("extended")
@@ -67,5 +81,38 @@
         sidebarframe.classList.remove("extended")
         sidebardiv.classList.remove("extended")
     }
+    function nextimg() {
+        if (counter < imgarray.length) {
+            
+            imgarray[counter-1].classList.remove("z")
+            counter++
+            imgarray[counter-1].classList.add("z")
+            counterelement.innerHTML = "Image " + counter + " of " + imgarray.length
+
+        }
+        else {
+            imgarray[counter-1].classList.remove("z")
+            counter = 1
+            imgarray[counter-1].classList.add("z")
+            counterelement.innerHTML = "Image " + counter + " of " + imgarray.length
+        }
+        
+    }
+    function previmg() {
+        if (counter > 1) {
+            imgarray[counter-1].classList.remove("z")
+            counter--
+            imgarray[counter-1].classList.add("z")
+            counterelement.innerHTML = "Image " + counter + " of " + imgarray.length
+        }
+        else {
+            imgarray[counter-1].classList.remove("z")
+            counter = imgarray.length
+            imgarray[counter-1].classList.add("z")
+            counterelement.innerHTML = "Image " + counter + " of " + imgarray.length
+        }
+
+    }
+    counterelement.innerHTML = "Image " + counter + " of " + imgarray.length
 </script>
 </html>

@@ -52,6 +52,11 @@ a {
     font-weight: 550;
     
 }
+button {
+    margin: 0 5px 5px 5px;
+    width: 50px;
+    height: 25px;
+}
 #sidebarframe {
     width: 100px;
     border: 0;
@@ -189,13 +194,13 @@ a {
 .boxtype2 {
     background-color: #FDF0D5;
     height: fit-content;
-    min-width: 350px;
+    min-width: 300px;
     border-radius: 15px;
     border: 3px solid #FDF0D5;
     display: flex;
     margin: 10px;
     padding-bottom: 5px;
-    flex: 1 1 350px;
+    flex: 1 1 300px;
 }
 
 .imgbox {
@@ -312,9 +317,36 @@ a {
 .gameimgbox {
     background-color: #FDF0D5;
     width: 700px;
-    height: fit-content;
+    height: 428px;
     margin: 10px;
+    position: relative;
+    display: flex;
+    border:#FDF0D5 solid 2px;
+    border-radius: 25px;
+    overflow: hidden;
 }
 .gameimg {
-    padding: 5px;
+    padding: 5px 5px 0 5px;
+    z-index: 0;
+    position: absolute;
+    border-radius: 22px 22px 15px 15px;
+}
+.imgcontrols {
+    margin: 0 5px;
+    width: 100%;
+    align-content: flex-end;
+}
+.rightbtn {
+    float: right;
+}
+.imgcounter {
+    display: inline;
+    margin: 0 33%;
+}
+.gameimg.z {
+    padding: 5px 5px 0 5px;
+    z-index: 1;
+}
+.box1img {
+    width: 100%;
 }

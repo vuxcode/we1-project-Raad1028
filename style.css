@@ -109,6 +109,7 @@ button {
     background-color: #669BBC;
     border-radius: 15px;
     overflow: hidden;
+    align-content: center;
 }
 .sidebarbox.extended {
     border: solid 1px black;
@@ -132,7 +133,6 @@ button {
     border-width: 0 0 1px 0;    
 }
 .sidebartext {
-    margin-top: 60%;
     text-align: center;
 }
 .logo {
@@ -184,7 +184,7 @@ button {
 }
 .boxtype1 {
     background-color: #FDF0D5;
-    height: 500px;
+    height: 550px;
     width: 356px;
     margin: 5px 1%;
     border-radius: 25px;
@@ -215,7 +215,7 @@ button {
     border-width: 1px 0 0 0;
     border-style: solid;
     width: 100%;
-    height: 35%;
+    height: 36%;
     display: flex;
     flex-direction: row;
 }
@@ -226,7 +226,7 @@ button {
 .boxbutton {
     width: 92px;
     height: 66px;
-    margin: 60px 1px 0 0;
+    margin: 81px 1px 0 0;
     border: 1px solid #003049;
     border-radius: 10px;
     float: right;

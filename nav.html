@@ -12,9 +12,19 @@
                 <img class="logo" src="placeholderLogo.png" alt="placeholder logo">
             </a>
         </div>
-        <div id="genrebtn" class="sidebarbtn">
-            <a class="sidebarbox" href="#">
-                <h3 class="sidebartext">Genres</h3>
+        <div class="sidebarbtn genrebtn">
+            <a class="sidebarbox" href="strategy.html" target="_parent">
+                <h3 class="sidebartext">Strategy</h3>
+            </a>
+        </div>
+        <div class="sidebarbtn genrebtn">
+            <a class="sidebarbox" href="rpg.html" target="_parent">
+                <h3 class="sidebartext">RPG</h3>
+            </a>
+        </div>
+        <div class="sidebarbtn genrebtn">
+            <a class="sidebarbox" href="roguelike.html" target="_parent">
+                <h3 class="sidebartext">Rogue-like</h3>
             </a>
         </div>
         <div class="sidebarlist hidden">
@@ -68,7 +78,9 @@
         var sidebarbox0 = document.getElementsByClassName("sidebarbox")[0];
         var sidebarbox1 = document.getElementsByClassName("sidebarbox")[1];
         var sidebarbtn0 = document.getElementsByClassName("sidebarbtn")[0];
-        var genrebtn = document.getElementById("genrebtn");
+        var genrebtn0 = document.getElementsByClassName("genrebtn")[0];
+        var genrebtn1 = document.getElementsByClassName("genrebtn")[1];
+        var genrebtn2 = document.getElementsByClassName("genrebtn")[2];
         var extendText = document.getElementsByClassName("extend")[0];
         var sidebarlist = document.getElementsByClassName("sidebarlist")[0];
 
@@ -84,7 +96,9 @@
             sidebarbox0.classList.remove("extended")
             sidebarbox1.classList.remove("extended")
             sidebarbtn0.classList.remove("extended")
-            genrebtn.classList.remove("hidden")
+            genrebtn0.classList.remove("hidden")
+            genrebtn1.classList.remove("hidden")
+            genrebtn2.classList.remove("hidden")
             extendbtn.classList.remove("extended")
             sidebarExtended = "off"
             extendText.innerHTML = "Extend"
@@ -99,7 +113,9 @@
             sidebarbox0.classList.add("extended")
             sidebarbox1.classList.add("extended")
             sidebarbtn0.classList.add("extended")
-            genrebtn.classList.add("hidden")
+            genrebtn0.classList.add("hidden")
+            genrebtn1.classList.add("hidden")
+            genrebtn2.classList.add("hidden")
             extendbtn.classList.add("extended")
             sidebarExtended = "on"
             extendText.innerHTML = "Minimize"

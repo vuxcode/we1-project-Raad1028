@@ -107,6 +107,8 @@ button {
     width: 90px;
     height: 90px;
     background-color: #669BBC;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .sidebarbox.extended {
     border: solid 1px black;
@@ -114,6 +116,7 @@ button {
     display: block;
     width: 190px;
     height: 190px;
+
 }
 .sidebarbtn {
     height: 99px;
@@ -198,7 +201,7 @@ button {
     border-radius: 15px;
     border: 3px solid #FDF0D5;
     display: flex;
-    margin: 10px;
+    margin: 10px 1%;
     padding-bottom: 5px;
     flex: 1 1 300px;
 }
@@ -311,20 +314,19 @@ button {
 .gamediv {
     height: 100%;
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
-    flex-wrap: wrap;
     
 }
 .gameimgbox {
     background-color: #FDF0D5;
     width: 700px;
     height: 428px;
-    margin: 10px;
+    margin: 10px 1%;
     position: relative;
     display: flex;
     border:#FDF0D5 solid 2px;
-    border-radius: 25px;
+    border-radius: 20px;
     overflow: hidden;
 }
 .gameimg {
@@ -334,7 +336,7 @@ button {
     border-radius: 22px 22px 15px 15px;
 }
 .imgcontrols {
-    margin: 0 5px;
+    margin: 0 10px;
     width: 100%;
     align-content: flex-end;
 }
@@ -361,4 +363,15 @@ li a  {
 }
 .extend {
     color: #003049;
+}
+.boxtype2.review {
+    min-width: 500px;
+    height: fit-content;
+    flex: 0;
+
+}
+.upperpart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

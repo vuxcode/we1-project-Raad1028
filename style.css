@@ -90,15 +90,7 @@ li a  {
 }
 #sidebardiv.extended {
     width: 200px;
-    display: flex;
     min-width: 200px;
-}
-.sidebar.extended {
-    height: 100%;
-    border-style: solid;
-    border-width: 0 1px 0 0;
-    width: 200px;
-    position: fixed;
 }
 .sidebar {
     height: 100%;
@@ -107,6 +99,12 @@ li a  {
     width: 100px;
     position: fixed;
     background-color: #003049;
+}
+.sidebar.extended {
+    width: 200px;
+}
+.logo {
+    width: 88px
 }
 .logo.extended{
     border: solid 1px black;
@@ -124,14 +122,11 @@ li a  {
     border-radius: 15px;
     overflow: hidden;
     align-content: center;
+    color: #003049;
 }
 .sidebarbox.extended {
-    border: solid 1px black;
-    margin: 4px auto;
-    display: block;
     width: 190px;
     height: 190px;
-
 }
 .sidebarbox:hover {
     color: #FDF0D5;
@@ -155,9 +150,6 @@ li a  {
 .sidebartext {
     text-align: center;
 }
-.logo {
-    width: 88px
-}
 .extendbtn {
     display: block;
     border: solid black;
@@ -170,18 +162,10 @@ li a  {
     padding: 5px;
     text-align: center;
     background-color: #669BBC;
+    color: #003049;
 }
 .extendbtn.extended {
-    display: block;
-    border: solid black;
-    border-width: 1px 0 0 0;
-    height: 180px;
     width: 200px;
-    position: absolute;
-    top: 95%;
-    bottom: 100%;
-    padding: 5px;
-    text-align: center;
 }
 .extendbtn:hover {
     color: #FDF0D5;
@@ -261,7 +245,7 @@ li a  {
     border-radius: 10px;
     float: right;
     background-color:#669BBC;
-    color:#C1121F;
+    color: #003049;
     align-content: center;
     shape-outside: inset(calc(100% - 55px) 0 0);
     text-align: center;

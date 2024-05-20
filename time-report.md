@@ -66,3 +66,13 @@
   - Added pages to each game.
   - Added images and info to the pages of each game.
   - A lot off tweaks to the design.
+
+- 2024-05-19 16:00 Worked for 2 hours.
+  - Added the review portion of the game pages.
+  - Changed the design of the sidebar menu.
+  - Added images to home page.
+
+- 2024-05-20 19:00 Worked for 2 hours
+  - Added interactions to elements.
+  - Cleaned up parts of style.css
+  - Other minor changes to design
